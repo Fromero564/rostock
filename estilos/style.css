@@ -58,7 +58,68 @@
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
+/* seccion portada */
+.seccion-portada{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.portada {
+  position:relative;
+  width: 60vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #325899;
+  height: 40vh; 
+  margin-top: 50px; 
+  padding: 50px;
+  box-sizing: border-box;
+  transition: height 0.5s ease;
+   
+}
+.portada img {
+  max-width: 50%;
+  max-height:40vh;
+  height: auto;
+  position: relative;
+  
 
+}
+
+.img-1 {
+  animation: slide-up 1s ease;
+  opacity: 0.8;
+}
+
+.img-2 {
+  animation: slide-down 1s ease;
+  opacity: 0.8;
+}
+
+.texto-bienvenida {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewY(4deg); 
+  background-color: rgba(255, 255, 255, 0.3);
+  color:black;
+  padding: 20px 20px;
+  text-align: center; 
+  z-index: 1;
+}
+
+#fade-text {
+  opacity: 0;
+  font-family: "Oswald", sans-serif;
+  transform: translateY(100%);
+  letter-spacing: 2px;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  font-weight: small-caps;
+  font-size: 45px;
+  
+}
 /*BODY*/
 body{
     background-image: url("../img/fondo/fondo.jpeg");

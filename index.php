@@ -24,11 +24,16 @@
         </ul>
         </nav>
     </header>
-    <section style="width:100vw;display:flex;justify-content:center;align-items:center;">
-        
-        <article style="width:60vw;background-color:#325899;height:30vh;margin:25px">
-         
-        </article>
+    <section class="seccion-portada">
+    <article class="portada">
+    <div class="texto-bienvenida">
+            <p id="fade-text">¡Bienvenidos a Rostcok! Donde creamos estilos.</p>
+     </div>
+        <img src="./img/banner/Banner.jpeg" alt="FotoBannerRostock" class="img-1">
+        <img src="./img/banner/Banner1.jpeg" alt="FotoBannerRostock" class="img-2">
+        <img src="./img/banner/Banner2.jpeg" alt="FotoBannerRostock" class="img-1">
+        <img src="./img/banner/Banner3.jpeg" alt="FotoBannerRostock" class="img-2">
+    <article/>
     </section>
     <main style="display:flex">
      <section style="width:15vw;background-color:#325899;margin:25px;height:70vh">
