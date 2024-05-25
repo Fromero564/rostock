@@ -3,6 +3,7 @@
 /*HEADER*/
 .header-rostock{
     display: flex;
+    width: 100vw;
     /* height:20vh; */
     justify-content: space-around;
     align-items: center;
@@ -61,27 +62,28 @@
 /* seccion portada */
 .seccion-portada{
   display:flex;
+  width: 100vw;
   justify-content: center;
   align-items: center;
 }
 .portada {
   position:relative;
-  width: 60vw;
+  width: 100vw;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #325899;
-  height: 40vh; 
-  margin-top: 50px; 
-  padding: 50px;
+  height: 70vh; 
+  /* margin-top: 50px;  */
+  /* padding: 50px; */
   box-sizing: border-box;
   transition: height 0.5s ease;
    
 }
 .portada img {
-  max-width: 50%;
-  max-height:40vh;
+  max-width: 90vw;
+  max-height:70vh;
   height: auto;
   position: relative;
   
@@ -100,11 +102,13 @@
 
 .texto-bienvenida {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) skewY(4deg); 
+  width: 100%;
+  height: 100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.3);
-  color:black;
+  color:#325899;
   padding: 20px 20px;
   text-align: center; 
   z-index: 1;
@@ -112,13 +116,21 @@
 
 #fade-text {
   opacity: 0;
-  font-family: "Oswald", sans-serif;
-  transform: translateY(100%);
   letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  font-weight: small-caps;
-  font-size: 45px;
-  
+  font-weight: bold;
+  font-size: 4rem;
+} 
+
+.div-texto{
+  width: 80%;
+  margin: 50px auto;
+  /* background-color:rgba(255, 255, 255, 0.8); */
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
 }
 /*BODY*/
 body{
